@@ -1,252 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="google-adsense-account" content="ca-pub-6190063583072126">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6190063583072126" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Rad Hen Games</title>
-  <meta name="description" content="Rad Hen Games - indie games by Henry. Play Flying Sahur free in your browser." />
-
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      --bg: #0a0a0a;
-      --surface: #111111;
-      --border: #2a0a0a;
-      --text: #ffffff;
-      --muted: #aaaaaa;
-      --accent: #cc0000;
-      --accent2: #ff2222;
-    }
-
-    html,
-    body {
-      min-height: 100vh;
-      background: var(--bg);
-      color: var(--text);
-      font-family: "Segoe UI", system-ui, sans-serif;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 24px;
-      border-bottom: 2px solid var(--accent);
-      background: var(--surface);
-    }
-
-    .logo {
-      font-size: 1.2rem;
-      font-weight: 900;
-      letter-spacing: 0.06em;
-      color: var(--accent);
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-
-    .logo span {
-      color: var(--text);
-      font-weight: 400;
-      text-transform: none;
-      font-size: 0.95rem;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 60px 24px;
-      gap: 48px;
-    }
-
-    .hero {
-      text-align: center;
-      max-width: 540px;
-    }
-
-    .hero h1 {
-      font-size: 2.8rem;
-      font-weight: 900;
-      line-height: 1.1;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .hero h1 span {
-      color: var(--accent);
-    }
-
-    .hero p {
-      margin-top: 14px;
-      font-size: 1rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .games {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      width: 100%;
-      max-width: 900px;
-    }
-
-    .game-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-      text-decoration: none;
-      color: var(--text);
-      transition: border-color 0.2s, transform 0.2s;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .game-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-3px);
-    }
-
-    .game-card-thumb {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: #1a0505;
-      overflow: hidden;
-    }
-
-    .game-card-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .game-card-body {
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      flex: 1;
-    }
-
-    .game-card-title {
-      font-size: 1.1rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .game-card-desc {
-      font-size: 0.85rem;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-
-    .game-card-cta {
-      margin-top: 12px;
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      font-weight: 800;
-      font-size: 0.85rem;
-      padding: 9px 18px;
-      border-radius: 5px;
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      transition: background 0.15s;
-    }
-
-    .game-card:hover .game-card-cta {
-      background: var(--accent2);
-    }
-
-    footer {
-      border-top: 2px solid var(--accent);
-      padding: 18px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.8rem;
-      color: var(--muted);
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    footer a {
-      color: var(--muted);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: var(--text);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Rad Hen Games is an independent game studio creating free browser games. Play Flying Sahur online with no download required.">
+<meta name="google-adsense-account" content="ca-pub-6190063583072126">
+<link rel="icon" href="JustSahur.png" type="image/png">
+<title>Rad Hen Games</title>
+<style>
+body{margin:0;background:#0a0a0a;color:#fff;font-family:Segoe UI,Arial,sans-serif;line-height:1.7}
+header,footer{background:#111;padding:20px}
+header{border-bottom:2px solid #c00}
+footer{border-top:2px solid #c00;text-align:center}
+main{max-width:1100px;margin:auto;padding:40px 20px}
+.hero{text-align:center;max-width:800px;margin:auto 0 40px auto}
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.card{background:#161616;border:1px solid #333;border-radius:8px;overflow:hidden;text-decoration:none;color:#fff}
+.card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+.card div{padding:18px}
+.button{display:inline-block;background:#c00;color:#fff;padding:10px 18px;border-radius:5px;font-weight:bold;margin-top:12px}
+section{max-width:850px;margin:50px auto}
+h2{color:#ff4444}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.gallery img{width:100%;border:1px solid #444;border-radius:8px}
+a{color:#fff}
+</style>
 </head>
 <body>
+<header><h1>Rad Hen Games</h1></header>
+<main>
+<div class="hero">
+<h1>Independent Browser Games</h1>
+<p>Welcome to Rad Hen Games. We create original browser games that are free to play with no downloads or installation required. Our focus is on simple gameplay, responsive controls, and fun arcade experiences that work on desktop and mobile devices.</p>
+<p>Every game is designed to load quickly so you can start playing immediately. We are continuously improving our games with new features, performance updates, and gameplay improvements.</p>
+</div>
 
-  <header>
-    <a class="logo" href="#">
-      Rad Hen Games <span>— indie games</span>
-    </a>
-  </header>
+<div class="games">
+<a class="card" href="/FlyingSahur/">
+<img src="4264371c-d1c0-4780-88bb-75f0d16e653e.png" alt="Flying Sahur">
+<div>
+<h2>Flying Sahur</h2>
+<p>Dodge obstacles, survive as long as possible, and beat your highest score in this fast-paced endless flying game.</p>
+<span class="button">Play Now</span>
+</div>
+</a>
+</div>
 
-  <main>
-    <div class="hero">
-      <h1>Games by <span>Rad Hen</span></h1>
-      <p>
-        Free indie games you can play right in your browser.
-        No downloads, no installs.
-      </p>
-    </div>
+<section>
+<h2>About Rad Hen Games</h2>
+<p>Rad Hen Games is an independent game development project dedicated to creating original HTML5 games that anyone can enjoy directly in a web browser. Our games are built with a focus on accessibility, smooth performance, and replayability. Whether you're looking for a quick challenge or trying to beat your previous high score, our goal is to provide an enjoyable experience for players of all ages.</p>
+<p>We believe browser games should be easy to access and fun to play without requiring downloads or accounts. As our library grows, you'll find more original titles covering arcade, action, and casual genres.</p>
+</section>
 
-    <div class="games">
-      <a class="game-card" href="/FlyingSahur/">
+<section>
+<h2>Game Screenshots</h2>
+<div class="gallery">
+<img src="0.png" alt="Gameplay screenshot 1">
+<img src="1.png" alt="Gameplay screenshot 2">
+<img src="w.png" alt="Gameplay screenshot 3">
+<img src="z.png" alt="Gameplay screenshot 4">
+</div>
+</section>
 
-        <div class="game-card-thumb">
-          <img src="4264371c-d1c0-4780-88bb-75f0d16e653e.png" alt="Flying Sahur Thumbnail">
-        </div>
-
-        <div class="game-card-body">
-          <div class="game-card-title">Flying Sahur</div>
-
-          <div class="game-card-desc">
-            A fast-paced endless runner. Dodge obstacles, survive as long as you can,
-            and compete for the highest score.
-          </div>
-
-          <span class="game-card-cta">Play Now</span>
-        </div>
-
-      </a>
-    </div>
-  </main>
-
-  <footer>
-    <span>© 2026 Rad Hen Games</span>
-
-    <span>
-      <a href="https://radhengames.github.io/privacy/" target="_blank">
-        Privacy Policy
-      </a>
-      &nbsp;|&nbsp;
-      <a href="https://radhengames.github.io/Credits/" target="_blank">
-        Credits
-      </a>
-    </span>
-  </footer>
-
+<footer>
+<p>© 2026 Rad Hen Games</p>
+<p><a href="https://radhengames.github.io/privacy/">Privacy Policy</a> | <a href="https://radhengames.github.io/Credits/">Credits</a></p>
+</footer>
+</main>
 </body>
 </html>
